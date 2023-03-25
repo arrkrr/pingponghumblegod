@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Course registration Form</title>
+</head>
+<style>
+    nav{
+        text-align: center;
+    }
+    ul{
+        list-style-type: none;
+        display: block;
+
+    }
+    li{
+        display: inline;
+        float: left;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: aliceblue;
+        background-color: black;
+        padding: 14px 120px;
+    }
+
+
+    #regno{
+        border: 2px solid black;
+    }
+    #fname{
+        margin-left: 70px;
+        border: 2px solid black;
+    }
+    #lname{
+        margin-left: 71px;
+        border: 2px solid black;
+    }
+    #email{
+        margin-left: 107px;
+        border: 2px solid black;
+    }
+    #program5{
+        margin-bottom: 30px;
+    }
+    #question{
+        margin-bottom: 30px;
+    }
+    #submit{
+        margin-top: 30px;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        background-color: #429000;
+        border-radius: 10px;
+        border: 5px solid #429000;
+        box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    #submit:hover{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#undergraduatefrom">Undergraduate Form</a></li>
+                <li><a href="#graduateform">Graduate Form</a></li>
+                <li><a href="#onlinepayment">Online Payment</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <form method="post">
+            <section>
+                <h1>Personal Information</h1>
+                <label for="regno">Registration Number: </label>
+                <input type="text" id="regno" name="regno" required><br>
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" required><br>
+                <select id="country" name="country" required>
+					<option value="">Select your Country</option>
+					<option value="Thailand">Thailand</option>
+					<option value="China">China</option>
+					<option value="Indonesia">Indonesia</option>
+					<option value="Myanmar">Myanmar</option>
+					<option value="Cambodia">Cambodia</option>
+					<option value="Laos">Laos</option>
+					<option value="India">India</option>
+					<option value="Germany">Germany</option>
+					<option value="Japan">Japan</option>
+					<option value="Phillipines">Phillipines</option>
+				</select>
+            </section>
+
+            <section>
+                <h1>Program of Interest</h1>
+                <p>Please select minimum two programs of interest:</p>
+				<input type="checkbox" id="program1" name="program1" value="entrepreneurialleadership">
+                <label for="program1">Entrepreneurial Leadership</label><br>
+                <input type="checkbox" id="program2" name="program2" value="innovationandwebdeveloper">
+                <label for="program2">Innovation and Web Developer</label><br>
+                <input type="checkbox" id="program3" name="program3" value="creativityanddesign">
+                <label for="program3">Creativity and Design</label><br>
+                <input type="checkbox" id="program4" name="program4" value="digitaltransformation">
+                <label for="program4">Didgital Transformation</label><br>
+                <input type="checkbox" id="program5" name="program5" value="backenddev">
+                <label for="program5">Back-End Development</label><br>
+				</label>
+            </section>
+
+            <section>
+                <label for="question" id="que">Any questions or suggestions? Please write below</label><br>
+                <textarea id="question" rows="4" cols="50">Elaborate any questions or suggestions here</textarea>
+                <br>
+                <label for="Terms">Agree to the terms and conditions?</label><br>
+                <input type="radio" name="agree" for="agree" id="agree"><label>I agree</label>
+                <input type="radio" name="agree" for="disagree" id="disagree"><label>I disagree</label>
+                <br>
+                <input type="submit" value="Register" id="submit">
+            </section>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border: 3px solid black;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    th{
+        border: 1px solid black;
+        background-color: grey;
+    }
+    td{
+        border: 1px solid black;
+        background-color: beige;
+    }
+    #in{
+        background-color: green;
+    }
+    #ni{
+        background-color: red;
+    }
+</style>
+<body>
+    <p>a).</p>
+    <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Basic-Package</th>
+            <th>Premium-Package</th>
+            <th>Enterprise-Package</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Feature 1</td>
+            <td>B100/month</td>
+            <td>B200/month</td>
+            <td>B500/month</td>
+          </tr>
+          <tr>
+            <td>Feature 2</td>
+            <td>Included</td>
+            <td>Included</td>
+            <td>Included</td>
+          </tr>
+          <tr>
+            <td>Feature 3</td>
+            <td>Not Included</td>
+            <td>Included</td>
+            <td>Included</td>
+          </tr>
+          <tr>
+            <td>Feature 4</td>
+            <td>Not Included</td>
+            <td>Included</td>
+            <td>Included</td>
+          </tr>
+          <tr>
+            <td>Feature 5</td>
+            <td>Not Included</td>
+            <td>Not Included</td>
+            <td>Included</td>
+          </tr>
+          <tr>
+            <td>Feature 6</td>
+            <td>Not Included</td>
+            <td>Not Included</td>
+            <td>Included</td>
+          </tr>
+          <tr>
+            <td>Feature 7</td>
+            <td>Not Included</td>
+            <td>Not Included</td>
+            <td>Included</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>b).</p>
+      <table>
+        <thead>
+            <tr>
+                <th>Packages</th>
+                <th>Price</th>
+                <th>Feature1</th>
+                <th>Feature2</th>
+                <th>Feature3</th>
+                <th>Feature4</th>
+                <th>Feature5</th>
+                <th>Feature6</th>
+                <th>Feature7</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Basic-Package</td>
+                <td>B100/month</td>
+                <td id="in">Included</td>
+                <td id="in">Included</td>
+                <td id="ni">Not Included</td>
+                <td id="ni">Not Included</td>
+                <td id="ni">Not Included</td>
+                <td id="ni">Not Included</td>
+                <td id="ni">Not Included</td>
+            </tr>
+            <tr>
+                <td>Premium-Package</td>
+                <td>B200/month</td>
+                <td id="in">Included</td>
+                <td id="in">Included</td>
+                <td id="in">Included</td>
+                <td id="in">Included</td>
+                <td id="ni">Not Included</td>
+                <td id="ni">Not Included</td>
+                <td id="ni">Not Included</td>
+            </tr>
+            <tr>
+                <td>Enterprise-Package</td>
+                <td>B500/month</td>
+                <td id="in">Included</td>
+                <td id="in">Included</td>
+                <td id="in">Included</td>
+                <td id="in">Included</td>
+                <td id="in">Included</td>
+                <td id="in">Included</td>
+                <td id="in">Included</td>
+            </tr>
+        </tbody>
+      </table>
+</body>
+</html>
