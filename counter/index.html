@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter 1.0</title>
+    <style>
+        body{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        main{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .title{
+            font-size: 5vw;
+            text-align: center;
+        }
+        #number{
+            font-size: 7vw;
+            text-align: center;
+            margin-block: 2rem;
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+        }
+        .buttons *{
+            border: 2px solid black;
+            margin: 1rem;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 250ms ease-in-out;
+        }
+        .buttons *:hover{
+            background-color: #111;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="title">
+            Counter 1.0
+        </div>
+        <div id="number">
+            0
+        </div>
+        <div class="buttons">
+            <div id="decrease">Decrease</div>
+            <div id="reset">Reset</div>
+            <div id="increase">Increase</div>
+        </div>
+    </main>
+    <script>
+        const decrease_button = document.getElementById('decrease');
+        const reset_button = document.getElementById('reset');
+        const increase_button = document.getElementById('increase');
+        const display_area = document.getElementById('number');
+        let number = 0;
+
+        //main functions
+        const update_number = (new_number) =>{
+            display_area.innerHTML = number;
+
+            if(new_number >= 0){
+                display_area.style.color = 'blue';
+            }else{
+                display_area.style.color = 'red';
+            }
+        }
+        const decrease_function = () =>{
+            update_number(--number);
+        }
+        const increase_function = () =>{
+            update_number(++number);
+        }
+        const reset_function = () =>{
+            number=0;
+            update_number(0);
+        }
+
+        //call the function
+        decrease_button.addEventListener('click', decrease_function)
+        increase_button.addEventListener('click', increase_function)
+        reset_button.addEventListener('click',reset_function)
+    </script>
+</body>
+</html>
