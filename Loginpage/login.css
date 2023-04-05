@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(158, 150, 213);
+}
+.form-box{
+    background-color: aliceblue;
+    position: relative;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+}
+h2{
+    padding-top: 10px;
+    font-size: 2rem;
+}
+#email{
+    position: relative;
+    width: 350px;
+    height: 30px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+#pwd{
+    position: relative;
+    width: 350px;
+    height: 30px;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+.forgot{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.forgot a{
+    text-decoration: none;
+    color: cornflowerblue;
+    margin-left: 130px;
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 350px;
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: blue;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+}
+.account{
+    margin-top: 20px;
+    color: #00000087;
+}
+.account a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.connect{
+    text-align: left;
+}
